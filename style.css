@@ -881,3 +881,182 @@ body {
 *::-webkit-scrollbar-thumb:hover {
     background: #1e40af;
 }
+
+
+/* ===============================
+   MOBILE RESPONSIVE FIXES ONLY
+   (Theme unchanged)
+=============================== */
+
+/* -------- Tablets & small laptops -------- */
+@media (max-width: 1024px) {
+
+  .hero h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem;
+  }
+
+  .section-title h3 {
+    font-size: 2rem;
+  }
+
+}
+
+/* -------- Tablets & large mobiles -------- */
+@media (max-width: 900px) {
+
+  /* Header */
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-nav {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    background: #123b66;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Layout grids */
+  .about-grid,
+  .contact-grid,
+  .mv-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-flex {
+    flex-direction: column;
+  }
+
+  .owner-card {
+    max-width: 420px;
+    margin: auto;
+  }
+}
+
+/* -------- Mobile phones -------- */
+@media (max-width: 600px) {
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header */
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 0.75rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 40px 0 60px;
+  }
+
+  .hero h2 {
+    font-size: 1.9rem;
+    line-height: 1.25;
+  }
+
+  .hero-owner {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Cards */
+  .highlight-card,
+  .service-card {
+    padding: 24px 18px;
+  }
+
+  /* Stats */
+  .stat-item span {
+    font-size: 2.4rem;
+  }
+
+  /* About */
+  .page-title h2 {
+    font-size: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.7rem;
+  }
+
+  .founder-story {
+    padding: 20px;
+  }
+
+  /* Contact */
+  .contact-info,
+  .contact-form {
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .info-item {
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+
+  /* Social buttons */
+  .social-big a {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+/* -------- Very small devices -------- */
+@media (max-width: 380px) {
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+}
